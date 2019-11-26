@@ -1,0 +1,34 @@
+<%= render partial: 'header_edit' %>
+<div class="container">
+    <%= form_with model: @user, local: true do |form| %>   
+        <div class="row">
+            <div class="col-md-4 left_img prof_left">
+                <div class="field image">
+                    <%= form.label 'thumbnail (Please select image)' %>
+                    <div class="field_image">
+                        <div id="img_field" onClick="$('#file').click()">
+                            <%= image_tag @user.image_name.to_s %>
+                        </div>
+                            <%= form.file_field :image_name, class: "image", style: "display:none;", id: "file"%>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 prof_right">
+                <div class="form-group">
+                     <%= form.label :name, 'Name' %>
+                     <%= form.text_field :name, class: 'form-control' %>
+                </div>
+                <div class="form-group">
+                     <%= form.label :title, 'Email' %>
+                     <%= form.text_field :email, class: 'form-control' %>
+                </div>
+                <div class="form-group">
+                    <%= form.label :body, 'Profile' %>
+                    <%= form.text_area :profile, class: 'form-control', rows: 6 %>
+                </div>
+                <%= form.submit 'Save', class: 'btn btn-primary' %>
+            </div>
+        </div>
+    <% end %>
+</div>
+

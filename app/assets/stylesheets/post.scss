@@ -1,0 +1,165 @@
+/* header ================================ */
+
+.brand_rogo{
+  margin-right:4px;
+}
+
+.navbar-nav .btn{
+  margin: 0px 4px 0px 4px;
+}
+
+.new_post_bottom {
+    margin-left:8px;
+}
+
+.header_img img{
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  box-shadow: 0 2px 6px #c1ced7;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+button.button_logout{
+  color:black;
+}
+
+/* body ================================ */
+
+.posts-index {
+    background-color: #eee;
+    background-repeat: no-repeat;
+  }
+  
+  .container{
+    text-align:center;
+    margin:auto;
+  }
+  
+  .card {
+    width: 510px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    margin-top:60px;
+    margin-left:20px;
+    margin-right:20px;
+    display: inline-block;
+    border-radius: 20px 20px 20px 20px;
+    
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+
+ .card-content p{
+    font-size:20px;
+ }
+
+  .user{
+    float:left;
+  }
+
+  .user_item{
+    display: inline-block;
+  }
+  
+  .card-user_image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    box-shadow: 0 2px 6px #c1ced7;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  .post_title{
+    margin-top: 30px;
+  }
+
+  .post_image  img{ 
+    width:468px;
+    height:351px;
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  .field_image img{ 
+    width:468px;
+    height:351px;
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  .post_content{
+    font-size:55px;
+  }
+
+  .post_time{
+    font-size: 10px;
+    color: #8899a6;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .post_menus{
+    padding-top: 20px;
+    padding-right: 10px;
+    float: right;
+  }
+
+  .fav-count{
+    float:left;
+  }
+
+  .like-btn {
+    color: #8899a6;
+  }
+  
+  .like-btn-unlike {
+    color: #ff2581;
+  }
+
+  .com-count{
+    float: left;
+    margin-left:4px;
+  }
+
+    nav.pagination {
+    display: none;
+  }
+
+  
+  /* user_profile ================================ */
+
+  .left_img img{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+  }
+
+  .prof_right{
+    margin-top:70px;
+  }
+
+  .fav_num{
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  /* edit.html ================================ */
+
+  .prof_left{
+    margin-top:60px;
+  }
+
+  .user-bottom{
+    margin-top:30px;
+  }
+
+  
+  
+  // .edit{
+  //   margin-bottom:20px;
+  // }

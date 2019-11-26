@@ -1,0 +1,57 @@
+<div class="post_card jscroll">
+    <% @search_posts.each do |post| %>   
+          <section class="card">
+              <div class="card-content">
+                  <div class="user">
+                    <div class="user_item card-user_image">
+                        <%= image_tag post.user.image_name.to_s %>
+                        <%= post.user.name %>
+                    </div>                    
+                  </div>
+
+                  </br> 
+
+                  <p class="post_title">
+                    <%= post.title %>
+                  </p>
+
+                  <div class="post_image">
+                      <%= image_tag post.image_name.to_s %></br>
+                  </div>
+
+                  <p class="post_content">
+                    <%= simple_format(post.content) %>
+                  </p>
+                  
+
+                <div class="fav-count">
+                    <% if post.favorited_by?(@current_user) %> <!-- ログインしているユーザーがファボしたかどうかで分岐 -->
+                        <%=link_to post_favorites_path(post.id), method: :delete do %>
+                            <i class="fas fa-thumbs-up like-btn-unlike"></i>
+                        <% end %>
+                    <% else %>
+                        <%=link_to post_favorites_path(post.id), method: :post do %>
+                            <i class="fas fa-thumbs-up like-btn"></i>
+                        <% end %>
+                    <% end %>
+                    <%= post.favorites.count %>
+                </div>
+
+                <div class="com-count" data-toggle="modal" data-target="#UserModal">
+                        <i class="far fa-comment-dots"></i>
+                </div>
+                
+                
+
+                <br>
+
+                <div class="post_time"> 
+                    <%= post.created_at %>
+                </div>
+
+
+              </div>
+          </section>
+    <% end %>
+    <%= paginate @search_posts %>
+</div>
